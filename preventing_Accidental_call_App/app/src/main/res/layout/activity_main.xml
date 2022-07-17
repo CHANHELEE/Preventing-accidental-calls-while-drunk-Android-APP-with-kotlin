@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/PhoneNum"
+        android:hint="전화번호를 입력하세요 "
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/black"
+        android:layout_height="0dp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:hint="오늘 날짜를 입력하세요"
+        />
+
+    <EditText
+        android:id="@+id/relationship"
+        android:hint="관계를 입력하세요"
+        android:textColorHint="@color/black"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/msg"
+        android:hint="전달할 내용을 입력하세요"
+        android:textColorHint="@color/black"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="0.5"
+        android:text="테스트 시작하기"/>
+
+
+
+
+</LinearLayout>
